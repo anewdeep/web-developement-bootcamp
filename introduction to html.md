@@ -611,3 +611,18 @@
 - Cells can take up multiple rows or cells using attributes `colspan` & `rowspan` (*merging cells*).
 - `colspan`: no of columns a cell should span. *horizontal merge*
 - `rowspan`: no of rows a cell should span. *vertical merge*
+
+## Introdcution to JavaScript
+
+- Makes pages more interactive.
+- `onclick` attribute used to trigger an action when an HTML element is clicked or tapped.
+
+    `<button onclick = "alert('Message')">Click</button>` -> <button onclick = "alert('Message')">Click</button>
+- Can make other HTML elements interactive.
+- Function is a piece of code that can be called and reused in a program as many times as needed.
+- `alert()` function displays an alert box with a message and *OK* button. Message should be in quotes.
+
+    <img id = "logo" src = "https://img.icons8.com/?size=100&id=20909&format=png&color=000000"><br>
+    <button onclick = "logo.src = 'https://img.icons8.com/?size=100&id=20909&format=png&color=000000'">HTML</button>
+    <button onclick = "logo.src = 'https://img.icons8.com/?size=100&id=21278&format=png&color=000000'">CSS</button>
+    <button onclick = "logo.src = 'https://img.icons8.com/?size=100&id=108784&format=png&color=000000'">JS</button>
