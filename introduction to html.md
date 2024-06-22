@@ -40,7 +40,7 @@
 - Different headings can be added to organize content
 - `<h1>` styled with largest font, `<h6>` is the smallest.
 - Headings can be combined with other elements.
-- <h1> is the most important heading. THere should only be one level 1 heading per page.
+- `<h1>` is the most important heading. THere should only be one level 1 heading per page.
 - Heading levels must be used in correct order.
 - Some HTML elements can be defined with only one tag. They're called **empty tags**.
 - `<img>` doesn't require a closing tag.
@@ -120,8 +120,8 @@
         <p>line 1
         line 2</p>
     ```
-        <p>line 1
-        line 2</p>
+    <p>line 1
+    line 2</p>
 - `<br>` tag forces a **line break**.
 
     ```
