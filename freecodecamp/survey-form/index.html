@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Retail store feedback survey</title>
+    </head>
+    <body>
+        <h1 id="title">ABC Retail Store Survey</h1>
+        <p id="description">Customer satisfaction and feedback survey for ABC Retail Store<br>
+            Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form" method="post" action="https://www.example.com">
+            <fieldset>
+                <label for="">Personal Information</label>
+                <label for="name" id="name-label">Name<input type="text" name="customer_name" id="name" placeholder="Enter your name" required></label>
+                <label for="email" id="email-label">Email<input type="email" name="email" id="email" placeholder="Enter your email" required></label>
+                <label for="number" id="number-label">Age<input type="number" name="age" id="number" min="15" max="120" placeholder="Enter your age" required></label>
+                <label for="dropdown">Occupation
+                    <select name="occupation" id="dropdown">
+                        <option value="">Select your occupation</option>
+                        <option value="1">Student</option>
+                        <option value="2">Employed (Full-time)</option>
+                        <option value="3">Employed (Part-time)</option>
+                        <option value="4">Self-employed</option>
+                        <option value="5">Unemployed</option>
+                        <option value="6">Retired</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <h3>
+                    Satisfaction Level
+                </h3>
+                <label for="">
+                    On a scale of 1 to 5, how satisfied are you with our services at ABC Retail Store?
+                </label>
+                <label for="s-1"><input type="radio" name="s_level" id="s-1" value="1" class="inline">1 (Very Dissatisfied)</label>
+                <label for="s-2"><input type="radio" name="s_level" id="s-2" value="2" class="inline">2 (Dissatisfied)</label>
+                <label for="s-3"><input type="radio" name="s_level" id="s-3" value="3" class="inline" checked>3 (Neutral)</label>
+                <label for="s-4"><input type="radio" name="s_level" id="s-4" value="4" class="inline">4 (Satisfied)</label>
+                <label for="s-5"><input type="radio" name="s_level" id="s-5" value="5" class="inline">5 (Very Satisfied)</label>
+            </fieldset>
+            <fieldset>
+                <h3>
+                    Services and Features<br>
+                </h3>
+                <label for="">Which of the following services/features at ABC Retail Store have you used or are interested in using? (Select all that apply)
+                    <label for="customer-support"><input type="checkbox" name="features" id="customer-support" value="customer-support" class="inline">Online Customer Support</label>
+                    <label for="store-assistance"><input type="checkbox" name="features" id="store-assistance" value="store-assistance" class="inline">In-Store Assistance</label>
+                    <label for="warranty-returns"><input type="checkbox" name="features" id="warranty-returns" value="warranty-returns" class="inline">Product Warranty and Returns</label>
+                    <label for="online-ordering-system"><input type="checkbox" name="features" id="online-ordering-system" value="online-ordering-system" class="inline">Online Ordering System</label>
+                    <label for="mobile-app"><input type="checkbox" name="features" id="mobile-app" value="mobile-app" class="inline">Mobile App</label>
+                    <label for="newsletter-sub"><input type="checkbox" name="features" id="newsletter-sub" value="newsletter-sub" class="inline">Newsletter Subscription</label>
+                    <label for="loyalty-reward"><input type="checkbox" name="features" id="loyalty-reward" value="loyalty-reward" class="inline">Loyalty Rewards Program</label>
+                </label>
+                <label for="">Kindly mention if you have any other feedback or suggestions for us
+                    <textarea name="extra-feedback" id="feedback" rows="5" cols="50" placeholder="Write your feedback here"></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </body>
+</html>
